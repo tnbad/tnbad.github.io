@@ -1,0 +1,94 @@
+/* p {
+    color: blue;
+  } */
+
+  /* modificar múltiplos valores
+  
+  p {
+    color: red;
+    width: 500px;
+    border: 1px solid black;
+  } */
+
+  /* selecionar vários tipos de elementos 
+  p, li, h1 {
+    color: red;
+  } */
+
+/* Como esperado, o layout CSS é baseado principalmente no modelo de caixas. Cada um dos blocks que ocupam 
+espaço na sua página tem propriedades como essas:
+
+    padding, o espaço ao redor do conteúdo (ex.: ao redor do texto de um parágrafo).
+    border, a linha sólida do lado de fora do padding.
+    margin, o espaço externo a um elemento.
+
+    Nessa seção nós também vamos usar:
+
+    width (largura de um elemento).
+    background-color, a cor atrás do conteúdo de um elemento e do padding.
+    color, a cor do conteúdo de um elemento (geralmente texto).
+    text-shadow: cria uma sombra no texto dentro de um elemento.
+    display: define a maneira de dispor um elemento (não se preocupe com isso ainda). */
+
+  html {font-size: 20px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels */ 
+  font-family:'Open Sans', sans-serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */ 
+}
+
+html {
+  background-color: rgb(148, 153, 156); 
+}
+
+
+/* 
+width: 600px; — Isso força o corpo a ter 600 pixels de largura.
+
+margin: 0 auto; — Quando você define dois valores em uma propriedade como margin ou padding, 
+o primeiro valor afeta a parte superior do elemento e a parte inferior (tornando-os 0 nesse caso), 
+e no segundo valor os lados esquerdo e direito (aqui, auto é um valor especial que divide o espaço horizontal 
+uniformemente entre esquerda e direita). Você também pode utilizar um, três ou quatro valores, como 
+documentado aqui.
+
+background-color: #FF9500; — como antes, isso define a cor de fundo do elemento. Usamos um tipo de laranja 
+avermelhado no corpo, para opor ao azul escuro no elemento <html>, mas fique à vontade para ir em frente e 
+experimentar.
+
+padding: 0 20px 20px 20px; — temos quatro valores definidos no padding, para criar um pouco de espaço em 
+torno do nosso conteúdo. Dessa vez, estamos definindo sem padding na parte superior do corpo, e 20 pixels 
+no lado esquerdo, na parte inferior e no lado direito. Os valores definem a parte superior, o lado direito, 
+a parte inferior e o lado esquerdo, nessa ordem. Como com a margin, você também pode usar um, dois, ou três 
+valores, conforme documentado na sintaxe do padding.
+
+border: 5px solid black; — isso simplesmente define uma borda preta sólida de 5 pixels de largura em todos os lados do corpo. */
+
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: rgb(194, 195, 199);
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;    
+  color: #00539F;
+  text-align: center;
+  text-shadow: 3px 3px 1px black;
+}
+
+/* Finalmente, centralizaremos a imagem para melhorar a aparência. Nós poderiamos usar novamente o truque 
+margin: 0 auto que aprendemos anteriormente para o corpo, mas também precisamos fazer outra coisa. 
+O elemento <body> é em nível de bloco, o que significa que ocupa espaço na página e pode ter margens e 
+outros valores de espaçamento aplicados a ele. Imagens, por outro lado, são elementos em linha, o que 
+significa que não podem ter margens. Então, para aplicar margens a uma imagem, temos que dar o comportamento 
+de nível de bloco a imagem usando display: block;. */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
