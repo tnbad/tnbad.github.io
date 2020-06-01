@@ -10,8 +10,8 @@ minhaImagem.onclick = function() {
 }
 
 // 
-let meuBotao = document.querySelector('button'); // Criando variavel e definindo um valor pra mesma
-let meuCabecalho = document.querySelector('h1'); // Criando variavel e definindo um valor pra mesma
+let meuBotao = document.querySelector('button'); // Criando variavel associada ao b"button" e definindo um valor pra mesma
+let meuCabecalho = document.querySelector('h1'); // Criando variavel associada ao "h1"e definindo um valor pra mesma
 
 // function defineNomeUsuario() { //criando uma função..
 //     let meuNome = prompt('Por favor, digite seu nome.'); // variavel com valor definido pela função "prompt()" que cria uma caixa de dialogo para que o usuario entre com o dado.
